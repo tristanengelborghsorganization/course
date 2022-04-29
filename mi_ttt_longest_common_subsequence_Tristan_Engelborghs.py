@@ -38,6 +38,7 @@ def longest_common_subsequence(xstr, ystr):  # do not change the signature of th
 
     if xstr != ystr:
         common_sequence = ""
+        
         for i in range(len(xstr)):
             if xstr[i] in ystr:
                 pass
