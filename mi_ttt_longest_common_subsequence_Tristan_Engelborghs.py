@@ -35,8 +35,13 @@ def longest_common_subsequence(xstr, ystr):  # do not change the signature of th
     """
     Given two strings, this function returns the set of longest common subsequences of both strings
     """
+
     if xstr != ystr:
         common_sequence = ""
+        for i in range(len(xstr)):
+            if xstr[i] in ystr:
+                pass
+
         for i in range(len(xstr)):
             if xstr[i] in ystr:
                 position = ystr.find(xstr[i])
@@ -66,8 +71,6 @@ def longest_common_subsequence(xstr, ystr):  # do not change the signature of th
         return [xstr]
 
 
-
-
 # This function checks if two lists contain the same elements, that is, if all elements
 # in list1 are also an element in list2, and vice versa.
 #   e.g. contain_the_same_elements(["a"],["a"]) --> True
@@ -83,11 +86,16 @@ def contain_the_same_elements (list1, list2):
 # In this main function, several cases are tested.
 # You are of course free to change this function to define your own tests!
 def mains():
+    """
+    hello
+    """
     woord1 = input("woord1: ")
     woord2 = input("woord2: ")
     print(longest_common_subsequence(woord1, woord2))
 def main():
-
+    """
+    docstrings
+    """
     string1 = ""
     string2 = ""
     expected_result = [""]
